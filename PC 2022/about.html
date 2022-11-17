@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VT-CSE Course planner</title>
+    <link rel="stylesheet" href="astyle.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <!---we had linked our css file----->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+
+        <nav>
+
+            <a href="home.html"><img src="./logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href='home .html'>Home</a></li>
+                    <li><a href='about.html'>About Us</a></li>
+                    <li><a href='/gpa/index.html'>GPA Calculator</a></li>
+                    <li><a href='/calender/month-view.html'>Events Calendar</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width:auto;">Login</button></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>About Us</h1>
+       
+    </section>
+    <section class="about-us">
+        <div class="row">
+           <div class="about-col">
+            <h1>We are the Veltech University</h1>
+            <p>kjbnhvnkjnybunk,vtycfgukmlkjhghjmn  kughfghio ug khfytkjb</p>
+            <a href="" class="hero-btn red-btn" >EXPLORE NOW</a>
+           </div>
+            <div class="about-col">
+                <img src="veltech_img/about.jpg"   alt="">
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    
+
+
+
+
+
+  
+
+    <!--footer--->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The mx uewnlkvmerverklnrmerjvewm/vtefnbrtrnbtmnk hjvhcjhmb jhv hbfxj yuvk yuguym</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+        <p> Made with <i class="fa fa-heart-o"></i> Students </p>
+    </section>
+    <!--java script for toggle  menu----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

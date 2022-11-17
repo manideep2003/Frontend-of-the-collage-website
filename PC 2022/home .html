@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VT-CSE Course planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <!---we had linked our css file----->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="full-page">
+
+        <nav>
+
+            <a href="home.html"><img src="./logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href='home .html'>Home</a></li>
+                    <li><a href='#'>Courses</a></li>
+                    <li><a href='/gpa/index.html'>GPA Calculator</a></li>
+                    <li><a href='/calender/month-view.html'>Events Calendar</a></li>
+                    <li><a href='/about.html'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width:auto;">Login</button></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Best University In Chennai</h1>
+            <p>Welcome to the University where You can Explore your attributes with the Extraordinary Faculty and Facilities</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!--course-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nobis fugiat fugit dolor illo vero quos ea doloremque magnam tempora architecto consequuntur eaque aperiam adipisci quisquam beatae inventore voluptas quaerat!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Computer science and Engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, eum? Mollitia eaque consequuntur tempora eius explicabo distinctio doloribus numquam quam optio fugiat in aliquam nostrum placeat nesciunt, veniam sit praesentium.</p>
+            </div>
+            <div class="course-col">
+                <h3>Electronics and Communications Engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quisquam rem inventore laudantium quasi optio cumque eveniet esse dolore non! Sint cupiditate eius reprehenderit illum magnam, minima vitae labore earum.</p>
+            </div>
+            <div class="course-col">
+                <h3>Electrical and Electronics Engineering</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rerum blanditiis quisquam inventore quae asperiores totam rem libero quibusdam enim, quia odio beatae, quos, obcaecati animi accusamus hic minima sapiente?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="course-col">
+                <h3>Mechanical Engineering</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rerum blanditiis quisquam inventore quae asperiores totam rem libero quibusdam enim, quia odio beatae, quos, obcaecati animi accusamus hic minima sapiente?</p>
+            </div>
+            <div class="course-col">
+                <h3>Aeronautical Engineering</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rerum blanditiis quisquam inventore quae asperiores totam rem libero quibusdam enim, quia odio beatae, quos, obcaecati animi accusamus hic minima sapiente?</p>
+            </div>
+            <div class="course-col">
+                <h3>Biotechnology Engineering</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rerum blanditiis quisquam inventore quae asperiores totam rem libero quibusdam enim, quia odio beatae, quos, obcaecati animi accusamus hic minima sapiente?</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="campus">
+        <h1>Our Other Campuses</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique impedit magni nisi? Reiciendis, distinctio iure! Ut placeat tempora voluptates maiores fugit eveniet, odio omnis porro at! Suscipit, earum aut?</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="london.png">
+                <div class="Layer">
+                    <h3>Vel Tech Multi Tech</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="washington.png">
+                <div class="Layer">
+                    <h3>Vel Tech Hight Tech</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="newyork.png">
+                <div class="Layer">
+                    <h3>Vel Tech School of Law</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum ex laudantium totam nam suscipit quis fugiat corporis reprehenderit quidem? Dicta eveniet, delectus libero recusandae soluta voluptatum voluptatibus autem iusto.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="library.png">
+                <h3>World class library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum voluptates praesentium veniam expedita molestiae saepe illum, odit tenetur maiores corporis voluptatem? Voluptates, beatae necessitatibus. Corporis officiis assumenda dolorum reiciendis?</p>
+            </div>
+            <div class="facilities-col">
+                <img src="basketball.png">
+                <h3>Play ground</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed error, cum ad, excepturi blanditiis officia officiis vitae molestias ipsa quos, sequi dolores aliquid nemo ab. At placeat perferendis magni asperiores.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cafeteria.png">
+                <h3>Tasty and Healthy food</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit recusandae culpa iusto temporibus earum consectetur corrupti maxime inventore nisi, molestias obcaecati totam sit delectus accusantium. Non minus reprehenderit ullam autem?</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!------testimonials-->
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus asperiores quam recusandae dolore. Vel, at molestias aut explicabo distinctio, ullam ex quaerat facilis in vero impedit labore consequuntur commodi fugiat.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="user2.jpg">
+                <div>
+                    <h3>Manideep Reddy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nobis labore sint nisi laborum odio, neque, beatae illum itaque voluptate impedit similique autem esse officiis nulla in ad accusantium nam!</p>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="user1.jpg">
+                <div>
+                    <h3>Alexa</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus ea nostrum aliquam ducimus eaque rerum in totam delectus impedit esse, debitis voluptates minus molestiae, praesentium ipsum laudantium necessitatibus nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <h1>Enroll For Our Courses<br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Nisi aliquam deserunt accusantium cupiditate corporis culpa eligendi eaque, blanditiis praesentium<br> consequatur, excepturi facere sequi incidunt similique quia repudiandae dolorum rerum odit.</p>
+        <div class="icons">
+        </div>
+    </section>
+    <!--java script for toggle  menu----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
